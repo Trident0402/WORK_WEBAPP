@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <title>Memos 行動日誌</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/WORK_WEBAPP/assets/index-BBjJutnd.js"></script>
-    <link rel="stylesheet" crossorigin href="/WORK_WEBAPP/assets/index-OSTouSnS.css">
-  <link rel="manifest" href="/WORK_WEBAPP/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/WORK_WEBAPP/registerSW.js"></script></head>
-  <body>
-    <script>
-      // 自動導向腳本：如果您將整包原始碼上傳到 GitHub Pages，這段腳本會自動帶您進入 dist/ 資料夾
-      if (window.location.hostname.includes('github.io') && window.location.pathname.indexOf('/dist') === -1) {
-        let path = window.location.pathname;
-        path = path.replace(/index\.html$/, '');
-        if (!path.endsWith('/')) path += '/';
-        window.location.replace(path + 'dist/');
-      }
-    </script>
-    <div id="root"></div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>Memos 行動日誌</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script type="module" crossorigin src="/WORK_WEBAPP/assets/index-BBjJutnd.js"></script>
+  <link rel="stylesheet" crossorigin href="/WORK_WEBAPP/assets/index-OSTouSnS.css">
+  <link rel="manifest" href="/WORK_WEBAPP/manifest.webmanifest">
+  <script id="vite-plugin-pwa:register-sw" src="/WORK_WEBAPP/registerSW.js"></script>
+</head>
+
+<body>
+  <script>
+    // 自動導向腳本：如果您將整包原始碼上傳到 GitHub Pages，這段腳本會自動帶您進入 dist/ 資料夾
+    if (window.location.hostname.includes('github.io') && window.location.pathname.indexOf('/dist') === -1) {
+      let path = window.location.pathname;
+      path = path.replace(/index\.html$/, '');
+      if (!path.endsWith('/')) path += '/';
+      window.location.replace(path);
+    }
+  </script>
+  <div id="root"></div>
+</body>
+
 </html>
